@@ -3,9 +3,11 @@
 import { useEffect } from 'react';
 
 function generateUUID() {
-  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
-    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-  );
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = crypto.getRandomValues(new Uint8Array(1))[0] % 16;
+    const v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
 }
 
 function getDeviceId() {
@@ -20,7 +22,7 @@ function getDeviceId() {
 export default function ClickTracker() {
   useEffect(() => {
     const deviceId = getDeviceId();
-    const domain = 'https://www.combatdoorgym.com/';
+    const domain = 'https://combatdoorgym.com/';
 
     fetch('https://fantasymmadness-game-server-three.vercel.app/track-click', {
       method: 'POST',
@@ -32,5 +34,5 @@ export default function ClickTracker() {
       .catch(err => console.error('Tracking failed:', err));
   }, []);
 
-  return null; // No UI needed
+  return null;
 }
