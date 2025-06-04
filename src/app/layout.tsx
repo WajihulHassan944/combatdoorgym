@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { AuthProvider } from './context/AuthContext'
+import ClickTracker from './ClickTracker'
 
 export const metadata: Metadata = {
   title: 'Bring the Fight Home with This Game-Changing Home Gym Setup',
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AuthProvider>
+           <ClickTracker />
           <main>
             {children}
           </main>
