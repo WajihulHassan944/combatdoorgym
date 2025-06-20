@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { AuthProvider } from './context/AuthContext'
 import ClickTracker from './ClickTracker'
+import ChatbaseWidget from "./ChatbaseWidget";
 
 export const metadata: Metadata = {
   title: 'Bring the Fight Home with This Game-Changing Home Gym Setup',
@@ -18,6 +19,8 @@ export default function RootLayout({
       <body>
         <AuthProvider>
            <ClickTracker />
+             <ChatbaseWidget />
+     
           <main>
             {children}
           </main>
