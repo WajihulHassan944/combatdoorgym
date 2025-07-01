@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Image1 from "./../../public/images/heroleft.webp";
-import Image2 from "./../../public/images/heroright.webp";
+import Image1 from "./../../public/updatedImages/product3.jpeg";
+import Image2 from "./../../public/updatedImages/product4.jpeg";
 import Image3 from "./../../public/images/prood6.png";
 import Button from "./button";
 import Link from "next/link";
@@ -74,7 +74,7 @@ export default function Shop() {
           </div>
 
           {/* Top Middle: Watch */}
-          <div className="bg-white rounded-3xl overflow-hidden flex items-center justify-center">
+          <div className="bg-white rounded-3xl overflow-hidden flex items-center justify-center" >
             <Image
               src={Image2}
               alt="Red smartwatch on a rock"
@@ -96,7 +96,7 @@ export default function Shop() {
           </div>
 
           {/* Bottom Middle: Shoes */}
-          <div className="bg-[#e6f7f7] rounded-3xl overflow-hidden flex items-center justify-center">
+          <div className="bg-[#e6f7f7] rounded-3xl overflow-hidden flex items-center justify-center" >
             <Image
               src={Image1}
               alt="White sneakers"

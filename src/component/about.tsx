@@ -13,12 +13,12 @@ export default function About() {
   const images = [
     {
       image: {
-        url: "/images/product1.png",
+        url: "/updatedImages/product1.jpeg",
       },
     },
     {
       image: {
-        url: "/images/product2.png",
+        url: "/updatedImages/product2.jpeg",
       },
     },
   ];
