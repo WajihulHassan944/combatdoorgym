@@ -53,7 +53,7 @@ export function ProductSection(): JSX.Element {
 
   const productData: ProductDataType = {
     name: "Combat Door Gym",
-    price: "$199.99",
+    price: "$99",
     rating: 4.8,
     reviewCount: 138,
     description:
