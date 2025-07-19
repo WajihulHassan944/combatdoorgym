@@ -6,21 +6,22 @@ import { FaPlayCircle, FaExpand } from 'react-icons/fa';
 const videos = [
   '/videos/COMBAT DOOR GYM ONE.mp4',
   '/videos/COMBAT DOOR GYM TWO.mp4',
-  '/videos/COMBAT DOOR GYM THREE.mp4',
 ];
-
 const Video = () => {
   return (
     <div
-      className="max-w-[1200px] mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-6 pt-5"
+      className="max-w-[1200px] mx-auto p-4 flex flex-wrap justify-center gap-6 pt-5"
       style={{ paddingBottom: '120px' }}
     >
       {videos.map((src, index) => (
-        <VideoPlayer key={index} src={src} />
+        <div key={index} className="w-full sm:w-[48%]">
+          <VideoPlayer src={src} />
+        </div>
       ))}
     </div>
   );
 };
+
 
 interface VideoPlayerProps {
   src: string;
