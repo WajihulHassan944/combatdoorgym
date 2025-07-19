@@ -62,7 +62,7 @@ export default function Gaming() {
               <div className="bg-white rounded-full p-2 border rotate-[-45deg]">
                 <ArrowRight className="w-4 h-4" />
               </div>
-              <p className="font-bold text-sm sm:text-base">$199.00</p>
+              <p className="font-bold text-sm sm:text-base">$99.00</p>
             </div>
           </div>
         </div>

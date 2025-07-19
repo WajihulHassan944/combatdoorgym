@@ -14,6 +14,7 @@ import ServiceSteps from "../component/service-steps";
 import FaqNEW from "../component/new-faq";
 import PrimaryHero from "../component/primaryHero";
 import Navbar from "../component/navbar";
+import Video from "@/component/video";
 
 const page = () => {
   return (
@@ -21,6 +22,9 @@ const page = () => {
       <Navbar />
       <div id="hero">
         <PrimaryHero />
+      </div>
+      <div id="video">
+        <Video />
       </div>
       <div id="about">
         <HeroSection />
