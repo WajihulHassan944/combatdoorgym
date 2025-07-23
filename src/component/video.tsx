@@ -5,7 +5,7 @@ import { FaPlayCircle, FaExpand } from 'react-icons/fa';
 
 const videos = [
   '/videos/COMBAT DOOR GYM ONE.mp4',
-  '/videos/COMBAT DOOR GYM TWO.mp4',
+  '/videos/combatdoor.mp4',
 ];
 const Video = () => {
   return (
@@ -96,7 +96,8 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
     >
       <video
         ref={videoRef}
-        className="w-full h-full object-cover"
+       className="w-full h-full object-cover object-top"
+
         src={src}
         preload="metadata"
        
